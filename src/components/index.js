@@ -1,0 +1,13 @@
+export { default as Header } from './Header';
+export { default as Footer } from './Footer';
+export { default as Logo } from './Logo';
+export { default as Icon } from './Icon';
+export { default as Section } from './Section';
+export { default as HeroSection } from './HeroSection';
+export { default as ProjectSection } from './ProjectSection';
+export { default as SkillSection } from './SkillSection';
+export { default as AboutSection } from './AboutSection';
+export { default as ContactSection } from './ContactSection';
+export { default as MediaDecoration } from './MediaDecoration';
+export { default as CurrentLocation } from './CurrentLocation';
+export { default as SkillBoard } from './SkillBoard';

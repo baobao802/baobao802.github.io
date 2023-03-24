@@ -1,0 +1,133 @@
+{
+  "hero": {
+    "title": "I'm a <mark>Software Engineer</mark>",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi illum ut cum quis debitis, rem ullam, illo dicta eum ab, similique dignissimos dolorum perspiciatis praesentium magni? Eum ullam dolore veritatis?",
+    "photo": null,
+    "current": {
+      "company": "SmartDev",
+      "url": "https://smartdev.com"
+    }
+  },
+  "media_links": [
+    {
+      "id": "github",
+      "link": "https://github.com/baobao802",
+      "label": "baobao802",
+      "icon": "github-icon"
+    },
+    {
+      "id": "facebook",
+      "link": "https://www.facebook.com/baobao080220",
+      "label": "QuocBao",
+      "icon": "facebook-icon"
+    },
+    {
+      "id": "linkedin",
+      "link": "https://www.linkedin.com/in/bao-truong-a5a5a3246/",
+      "label": "BaoTruong",
+      "icon": "linkedin-icon"
+    }
+  ],
+  "pages": [
+    {
+      "id": "page_1",
+      "title": "Home - Portfolio 802",
+      "path": "/",
+      "name": "home"
+    },
+    {
+      "id": "page_2",
+      "title": "Projects - Portfolio 802",
+      "path": "/projects",
+      "name": "projects"
+    },
+    {
+      "id": "page_3",
+      "title": "About me - Portfolio 802",
+      "path": "/about-me",
+      "name": "about-me"
+    }
+  ],
+  "projects": {
+    "decent": [
+      {
+        "id": "proj_1",
+        "name": "Project 1",
+        "url": "https://google.com",
+        "image": "https://img.freepik.com/free-photo/happy-young-asian-businessmen-businesswomen-meeting-brainstorming-ideas-about-new-paperwork-project_7861-3061.jpg?w=2000&t=st=1679479426~exp=1679480026~hmac=7c727480fc4b0f0a1176cd7c843c81804b309c89e5413acb741c63ebbfc9f2ba",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis iusto quos nemo doloribus amet eveniet saepe, perspiciatis nam aut ipsum perferendis exercitationem sed? Explicabo nobis tempora maxime error velit!",
+        "technologies": ["NodeJS", "ReactJS"]
+      },
+      {
+        "id": "proj_2",
+        "name": "Project 2",
+        "url": "https://google.com",
+        "image": "https://img.freepik.com/free-photo/happy-young-asian-businessmen-businesswomen-meeting-brainstorming-ideas-about-new-paperwork-project_7861-3061.jpg?w=2000&t=st=1679479426~exp=1679480026~hmac=7c727480fc4b0f0a1176cd7c843c81804b309c89e5413acb741c63ebbfc9f2ba",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "technologies": ["NodeJS", "ReactJS"]
+      },
+      {
+        "id": "proj_3",
+        "name": "Project 3",
+        "url": "https://google.com",
+        "image": null,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis iusto quos nemo doloribus amet eveniet saepe!",
+        "technologies": ["NodeJS", "ReactJS"]
+      }
+    ],
+    "small": []
+  },
+  "skills": [
+    {
+      "category": "Languages",
+      "list": ["TypeScript", "JavaScript", "Python"]
+    },
+    {
+      "category": "Databases",
+      "list": ["PostgreSQL", "MongoDB", "Firebase"]
+    },
+    {
+      "category": "Frameworks",
+      "list": ["ReactJS", "NextJS", "Express", "NestJS"]
+    },
+    {
+      "category": "Tools",
+      "list": ["Git & GitHub", "Bitbucket", "VSCode"]
+    },
+    {
+      "category": "Other",
+      "list": ["Node.js", "HTML", "CSS", "SCSS"]
+    }
+  ],
+  "about_me": {
+    "bio": [
+      "Hello, i’m Elias!",
+      "I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.",
+      "Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks."
+    ],
+    "photo": null
+  },
+  "contacts": {
+    "brief": "I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me",
+    "email": {
+      "id": "email",
+      "link": "mailto:quocbao080220@gmail.com",
+      "label": "quocbao080220@gmail.com",
+      "icon": "mail-icon"
+    },
+    "list": [
+      {
+        "id": "email",
+        "link": "mailto:quocbao080220@gmail.com",
+        "label": "quocbao080220@gmail.com",
+        "icon": "mail-icon"
+      },
+      {
+        "id": "linkedin",
+        "link": "https://www.linkedin.com/in/bao-truong-a5a5a3246/",
+        "label": "BaoTruong",
+        "icon": "linkedin-icon"
+      }
+    ]
+  }
+}

@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-dracula-white bg-dracula-dark tracking-wider font-mono;
+    word-spacing: 0.25em;
+  }
+
+  body * {
+    @apply leading-relaxed;
+  }
+
+  mark {
+    @apply text-dracula-pink bg-transparent;
+  }
+
+  object {
+    @apply focus-visible:outline-none;
+  }
+}
+
+@layer components {
+  .btn-hamburger {
+    @apply absolute top-5 right-5 w-8 h-8 md:invisible;
+    @apply before:absolute before:h-0.5 before:w-8 before:top-2 before:right-0 before:bg-dracula-purple before:transition-all before:duration-150 before:md:transition-none;
+    @apply after:absolute after:h-0.5 after:w-6 after:bottom-2 after:right-0 after:bg-dracula-purple after:transition-all after:duration-150 after:md:transition-none;
+  }
+
+  .btn-hamburger[data-toggle='on'] {
+    @apply before:-rotate-45 before:top-[15px];
+    @apply after:rotate-45 after:bottom-[15px] after:w-8;
+  }
+
+  .overall-layout {
+    @apply min-h-screen container mx-auto bg-dracula-dark text-dracula-white scroll-smooth;
+  }
+
+  .layout-header {
+    @apply sticky top-0 h-20 bg-dracula-dark z-50;
+  }
+
+  .layout-header > nav {
+    @apply flex justify-between px-5 pt-8 pb-5 h-full;
+  }
+
+  .layout-header > nav > ul {
+    @apply flex invisible gap-y-8 md:visible md:gap-x-8;
+  }
+
+  .layout-header[data-collapsed='true'] {
+    @apply fixed top-0 h-screen w-full bg-dracula-dark z-50;
+  }
+
+  .layout-header[data-collapsed='true'] > nav {
+    @apply flex-col justify-start gap-y-10;
+  }
+
+  .layout-header[data-collapsed='true'] > nav > ul {
+    @apply visible flex-col;
+  }
+
+  .layout-body {
+    @apply container mx-auto px-5 mb-10;
+    min-height: calc(
+      theme(height.screen) - theme(height.20) - theme(height.52)
+    );
+  }
+
+  .layout-footer {
+    @apply min-h-[13rem] px-5 py-8 border-t border-solid border-dracula-gray;
+  }
+
+  .nav-link {
+    @apply text-dracula-purple text-3xl md:text-base;
+    @apply before:content-['#'] before:text-dracula-purple before:mr-1;
+  }
+
+  .nav-link__active {
+    @apply text-dracula-comment;
+    @apply before:text-dracula-comment;
+  }
+
+  .section {
+    @apply py-8;
+  }
+
+  .button {
+    @apply border border-solid border-dracula-purple inline-flex items-center justify-center h-10 px-4 hover:bg-dracula-comment hover:bg-opacity-20;
+  }
+
+  .frame {
+    @apply border border-solid border-current;
+  }
+
+  .quote {
+    @apply frame px-8 py-8 relative max-w-xl mx-auto md:max-w-3xl;
+  }
+
+  .quote > blockquote {
+    quotes: '"' '"' "'" "'";
+    @apply text-xl;
+  }
+
+  .quote > blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.2em;
+    vertical-align: -0.4em;
+  }
+
+  .quote > figcaption {
+    @apply text-right text-dracula-comment mt-3;
+  }
+
+  .masonry {
+    @apply columns-1 gap-4 sm:columns-2 md:columns-3;
+  }
+
+  .masonry-brick {
+    @apply box-border break-inside-avoid mb-4;
+  }
+}
